@@ -1,67 +1,130 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>My Portfolio | Srujan</title> 
-</head> 
-<body> 
-  
-    <!-- NAVIGATION --> 
-    <nav> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Srujan</title>
+</head>
+<body>
+ 
+    <!-- NAVIGATION -->
+    <nav>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#skills">Skills</a><br>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a> 
-    </nav> 
-  
-    <!-- HERO SECTION --> 
-    <header> 
-        <h1>Hi, I'm Srujan  </h1> 
-        <p>I'm a passionate web developer from Bangalore.</p> 
-        <a href="#contact">Hire Me</a> 
-    </header> 
-  
-   <!-- ABOUT SECTION --> 
-   <section id="about"> 
-        <h2>About Me</h2> 
-        <img src="srujan.jpeg" alt="Profile photo of Srujan" width="200"> 
-        <p>I love building things on the web. Currently learning HTML, CSS, 
-           JavaScript, and React.</p> 
-    </section> 
-  
-    <!-- SKILLS SECTION --> 
-    <section id="skills"> 
-        <h2>My Skills</h2> 
-        <ul> 
-            <li>HTML5</li> 
-            <li>CSS3</li> 
-            <li>JavaScript</li> 
-            <li>React</li> 
-        </ul> 
-    </section> 
-  
-    <!-- PROJECTS SECTION --> 
-    <section id="projects"> 
-        <h2>My Projects</h2> 
-        <div class="project-card"> 
-            <h3>Project 1</h3> 
-            <p>Description of project 1</p> 
-           <a href="#">View Project</a> 
-       </div> 
-    </section> 
-  
-    <!-- CONTACT SECTION --> 
-    <section id="contact"> 
-        <h2>Contact Me</h2> 
-        <p>Email: <a 
-href="mailto:srujanchowdary24@gmail.com">srujanchowdary24@gmail.com</a></p> 
-    </section> 
-  
-    <!-- FOOTER --> 
-    <footer> 
-        <p>&copy; 2026 Srujan. All rights reserved.</p> 
-    </footer> 
-  
-</body> 
-</html> 
+        <a href="#contact">Contact</a>
+    </nav>
+ 
+    <!-- HERO SECTION -->
+    <header>
+        <h1>Hi, I'm Srujan 👋</h1>
+        <p>I'm a passionate web developer from Banglore.</p>
+        <a href="#contact">Hire Me</a>
+    </header>
+ 
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="srujan.jpeg" alt="Profile photo of Srujan" width="200">
+        <p>I love building things on the web. Currently learning HTML, CSS,
+           JavaScript, and React.</p>
+    </section>
+ 
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+       <table>
+            <thead>
+                <tr>
+                    <th>My Skills</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Beginner</td>
+                </tr>
+            </tbody>
+        </table>
+
+       </section>
+ 
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Description of project 1</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+ 
+    <!-- CONTACT SECTION -->
+   <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project in mind? Let's talk!</p>
+ 
+    <form action="#" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+ 
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+               <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8">
+         <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+            <option value="">-- Select a topic --</option>
+            <option value="hire">I want to hire you</option>
+            <option value="collab">I want to collaborate</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="Experience">Experience Level:</label>
+        <select id="experince" name="experince">
+            <option value="">-- Select your experience level --</option>
+            <option value="Beginner">Begginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Expert">Expert</option>
+        </select>
+         <label for="country">Country</label>
+    <select id="country" name="country">
+        <option value="">-- Choose Country --</option>
+        <option value="in">India</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+    </select>
+ 
+        <label for="contact">Contact</label>
+        <input type="tel" id="contact" name="contact" minlength="10" maxlength="10"
+               placeholder="Enter your contact number">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"
+                  placeholder="Tell me about your project..." required></textarea>
+ 
+        <button type="submit">Send Message 🚀</button>
+    </form>
+</section>
+ 
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Srujan. All rights reserved.</p>
+    </footer>
+ 
+</body>
+</html>
+ 
+
