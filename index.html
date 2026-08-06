@@ -3,63 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Srujan</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="keywords" content="P.Srujan, Portfolio, Web Developer, React, Node.js, JavaScript, HTML, CSS, Freelance Developer">
+    <meta name="author" content="P.Srujan">
+    <title>My Portfolio | P.Srujan</title>
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="My Portfolio | P.Srujan">
+    <meta property="og:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="[Your Portfolio URL]">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Portfolio | P.Srujan">
+    <meta name="twitter:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="twitter:image" content="images/profile.jpg">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/favicon.png" alt="Favicon">
 </head>
 <body>
  
     <!-- NAVIGATION -->
     <nav>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a><br>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
  
     <!-- HERO SECTION -->
     <header>
-        <h1>Hi, I'm Srujan 👋</h1>
-        <p>I'm a passionate web developer from Banglore.</p>
+        <h1>Hi, I'm P.Srujan 👋</h1>
+        <p>I'm a passionate web developer from Bangalore.</p>
         <a href="#contact">Hire Me</a>
     </header>
  
     <!-- ABOUT SECTION -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="srujan.jpeg" alt="Profile photo of Srujan" width="200">
+       <figure class="profile-figure">
+                    <img src="srujan.jpeg" alt="P.Srujan profile photo" width="300">
+                    <figcaption>P.Srujan — Web Developer</figcaption>
+                </figure>
         <p>I love building things on the web. Currently learning HTML, CSS,
            JavaScript, and React.</p>
     </section>
  
     <!-- SKILLS SECTION -->
     <section id="skills">
-       <table>
-            <thead>
-                <tr>
-                    <th>My Skills</th>
-                    <th>Experience</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Beginner</td>
-                </tr>
-                <tr>
-                    <td>React</td>
-                    <td>Beginner</td>
-                </tr>
-            </tbody>
-        </table>
-
-       </section>
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+    </section>
  
     <!-- PROJECTS SECTION -->
     <section id="projects">
@@ -69,10 +69,17 @@
             <p>Description of project 1</p>
             <a href="#">View Project</a>
         </div>
+         <!--Embed YouTube Video (iframe)-->
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/tqjJrXd27m4" 
+            title="YouTube video player" 
+            frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mrEYAqUAD4c?si=pGs5BZgv-SDhOW2U" title="YouTube video player"
+             frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts"></iframe>
     </section>
  
     <!-- CONTACT SECTION -->
-   <section id="contact">
+    <section id="contact">
     <h2>Contact Me</h2>
     <p>Have a project in mind? Let's talk!</p>
  
@@ -84,47 +91,26 @@
         <label for="email">Your Email</label>
         <input type="email" id="email" name="email"
                placeholder="Enter your email" required>
-               <label for="password">Password:</label>
-                <input type="password" id="password" name="password" minlength="8">
-         <label for="subject">Subject</label>
+               <label for="subject">Subject</label>
         <select id="subject" name="subject">
             <option value="">-- Select a topic --</option>
             <option value="hire">I want to hire you</option>
             <option value="collab">I want to collaborate</option>
             <option value="other">Other</option>
         </select>
-        <label for="Experience">Experience Level:</label>
-        <select id="experince" name="experince">
-            <option value="">-- Select your experience level --</option>
-            <option value="Beginner">Begginner</option>
-            <option value="Intermediate">Intermediate</option>
-            <option value="Expert">Expert</option>
-        </select>
-         <label for="country">Country</label>
-    <select id="country" name="country">
-        <option value="">-- Choose Country --</option>
-        <option value="in">India</option>
-        <option value="us">United States</option>
-        <option value="uk">United Kingdom</option>
-    </select>
  
-        <label for="contact">Contact</label>
-        <input type="tel" id="contact" name="contact" minlength="10" maxlength="10"
-               placeholder="Enter your contact number">
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5"
                   placeholder="Tell me about your project..." required></textarea>
  
-        <button type="submit">Send Message 🚀</button>
+        <button type="submit" aria-label="Submit button">Send Message 🚀</button>
     </form>
 </section>
  
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Srujan. All rights reserved.</p>
+        <p>&copy; 2026 P.Srujan. All rights reserved.</p>
     </footer>
  
 </body>
 </html>
- 
-
